@@ -7,9 +7,9 @@ int main(int argc, string argv[])
 {
     //checking the key
 		if (argc != 2)
-{
-				printf("Error message");
-				return 1;
+		{
+		printf("Error message");
+		return 1;
 }
 		string key = argv[1];
 		unsigned long keyCount = strlen(key);
@@ -19,8 +19,8 @@ int main(int argc, string argv[])
 {
 		if (!isalpha(key[k]))
 {
-						printf("Error message");
-						return 1;
+		printf("Error message");
+		return 1;
 }
 }
     //cheking if text box is empty
@@ -35,7 +35,7 @@ int main(int argc, string argv[])
 {
 				if (isalpha(p[i]))
 {
-	  //for lowercase letters
+    //for lowercase letters
 					  if (islower(p[i]))
 						printf("%c", ((((p[i] - 'a') + ((tolower(key[l++%strlen(key)])) - 'a') % 26) % 26) + 'a'));
   

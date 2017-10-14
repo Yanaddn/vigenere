@@ -1,2 +1,2 @@
-#Vigenere task 
+Vigenere task 
 CS50 course
